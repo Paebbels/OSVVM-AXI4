@@ -226,8 +226,8 @@ begin
     MemoryID  <= vMemID ; 
 
     -- Alerts
-    BusFailedID  <= NewID("No response", ID ) ;
-    DataCheckID  <= NewID("Data Check", ID ) ;
+    BusFailedID  <= NewID("No response", ID, ReportMode => NONZERO ) ;
+    DataCheckID  <= NewID("Data Check", ID, ReportMode => NONZERO ) ;
     
     vParams                 := NewID("Axi4Memory Parameters", to_integer(OPTIONS_MARKER), ID) ; 
     InitAxiOptions(vParams) ;
@@ -264,8 +264,8 @@ begin
   begin
     wait for 0 ns ; -- Allow ModelID to become valid
     TransRec.Params         <= Params ; 
-    TransRec.WriteBurstFifo <= NewID("WriteBurstFifo",      ModelID, Search => PRIVATE_NAME) ;
-    TransRec.ReadBurstFifo  <= NewID("ReadBurstFifo",       ModelID, Search => PRIVATE_NAME) ;
+    TransRec.WriteBurstFifo <= NewID("WriteBurstFifo",      ModelID, ReportMode => NONZERO, Search => PRIVATE_NAME) ;
+    TransRec.ReadBurstFifo  <= NewID("ReadBurstFifo",       ModelID, ReportMode => NONZERO, Search => PRIVATE_NAME) ;
     WriteAddressDelayCov    <= NewID("WriteAddrDelayCov",   ModelID, ReportMode => DISABLED) ; 
     WriteDataDelayCov       <= NewID("WriteDataDelayCov",   ModelID, ReportMode => DISABLED) ; 
     WriteResponseDelayCov   <= NewID("WriteRespDelayCov",   ModelID, ReportMode => DISABLED) ; 

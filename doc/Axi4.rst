@@ -3,18 +3,12 @@
 AXI4 Verification Components
 ############################
 
-.. _VC/Axi4/TerminologyManagerAndSubordinate:
+.. admonition:: Terminology: Manager and Subordinate
+   :class: hint
 
-Terminology: Manager and Subordinate
-************************************
+   OSVVM AXI4 VCs and this document use the more recent AXI terminology, Manager and Subordinate. An AXI Manager is the
+   agent that initiates transactions, and a Subordinate is the agent that receives and responds to requests.
 
-OSVVM AXI4 VCs and this document use the more recent AXI terminology, Manager and Subordinate. An AXI Manager is the
-agent that initiates transactions, and a Subordinate is the agent that receives and responds to requests.
-
-.. _VC/Axi4/Overview:
-
-Overview
-********
 
 The OSVVM AXI4 Verification Components (VCs) facilitate testing the interface and functionality of AXI4 devices. The
 OSVVM AXI4 VCs include :vhdlcode:`Axi4Manager`, :vhdlcode:`Axi4Subordinate`, and :vhdlcode:`Axi4Memory`. These VCs are

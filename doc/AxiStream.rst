@@ -3,11 +3,6 @@
 AxiStream Verification Components
 #################################
 
-.. _VC/AxiStream/Overview:
-
-Overview
-********
-
 The OSVVM AxiStream Verification Components (VCs) facilitate testing the interface and functionality of AxiStream
 devices. The OSVVM AxiStream VCs include :vhdlcode:`AxiStreamTransmitter` and :vhdlcode:`AxiStreamReceiver`. These VCs
 are intended to be part of a structured test environment.

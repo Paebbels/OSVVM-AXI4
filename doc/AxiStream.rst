@@ -43,7 +43,7 @@ together (using the same methods as in RTL design) and is often called a test ha
 verification components and :vhdlcode:`TestCtrl` use VHDL records (which we call the transaction interface). Connections
 between the verification components and the DUT are the DUT interfaces (such as AxiStream, UART, AXI4, SPI, and I2C).
 
-.. figure:: images/AxiStream/Figure01.png
+.. figure:: _static/images/AxiStream/Figure01.png
    :width: 411px
    :name: VC/AxiStream/Figure1
 
@@ -71,7 +71,7 @@ which data values A1, A3, A4, and A6 were sent, the AxiStream receiver was ready
 in which data values A2 and A5 were sent, the AxiStream receiver was not ready to receive TData until a clock cycle
 later.
 
-.. figure:: images/AxiStream/Figure02.png
+.. figure:: _static/images/AxiStream/Figure02.png
    :width: 542px
    :name: VC/AxiStream/Figure2
 
@@ -272,7 +272,7 @@ In the :ref:`previous section <VC/AxiStream/TbStreamPortBasedTransactionInterfac
 ran :file:`TbStream.vhd`, the AxiStream Testbench. It is in the directory
 :file:`OsvvmLibraries/AXI4/AxiStream/testbench`. It is structured as shown in :ref:`Figure 9 <VC/AxiStream/Figure9>`.
 
-.. figure:: images/AxiStream/Figure09.png
+.. figure:: _static/images/AxiStream/Figure09.png
    :width: 557px
    :name: VC/AxiStream/Figure9
 
@@ -551,7 +551,7 @@ In the :ref:`previous section <VC/AxiStream/TbStreamVirtualTransactionInterface/
 :ref:`Figure 15 <VC/AxiStream/Figure15>`. The record connections (shown with dotted lines) use external names rather
 than direct signal connections.
 
-.. figure:: images/AxiStream/Figure15.png
+.. figure:: _static/images/AxiStream/Figure15.png
    :width: 493px
    :name: VC/AxiStream/Figure15
 
@@ -1274,7 +1274,7 @@ When :vhdlcode:`RECEIVE_READY_BEFORE_VALID` is TRUE, then :vhdlcode:`RECEIVE_REA
 last transfer completed. :ref:`Figure 21 <VC/AxiStream/Figure21>` shows :vhdlcode:`RECEIVE_READY_DELAY_CYCLES` = 2 when
 :vhdlcode:`RECEIVE_READY_BEFORE_VALID` is TRUE.
 
-.. figure:: images/AxiStream/Figure21.png
+.. figure:: _static/images/AxiStream/Figure21.png
    :width: 406px
    :name: VC/AxiStream/Figure21
 
@@ -1285,7 +1285,7 @@ When :vhdlcode:`RECEIVE_READY_BEFORE_VALID` is FALSE, then :vhdlcode:`RECEIVE_RE
 TValid is asserted. :ref:`Figure 22 <VC/AxiStream/Figure22>` shows :vhdlcode:`RECEIVE_READY_DELAY_CYCLES` = 2 when
 :vhdlcode:`RECEIVE_READY_BEFORE_VALID` is FALSE.
 
-.. figure:: images/AxiStream/Figure22.png
+.. figure:: _static/images/AxiStream/Figure22.png
    :width: 406px
    :name: VC/AxiStream/Figure22
 

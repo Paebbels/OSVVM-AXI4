@@ -66,7 +66,7 @@ the verification components and :vhdlcode:`TestCtrl` use VHDL records (which we 
 Connections between the verification components and the DUT are the DUT interfaces (such as AxiStream, UART, AXI4, SPI,
 and I2C).
 
-.. figure:: images/Axi4/Figure01.png
+.. figure:: _static/images/Axi4/Figure01.png
    :width: 411px
    :name: VC/Axi4/Figure1
 
@@ -446,7 +446,7 @@ In the :ref:`previous section <VC/Axi4/TbAxi4PortBasedInterface/DemoRunningTheAX
 Testbench (:file:`TbAxi4.vhd`). It is in the directory :file:`OsvvmLibraries/AXI4/Axi4/testbench`. It is structured as
 shown in :ref:`Figure 11 <VC/Axi4/Figure11>`.
 
-.. figure:: images/Axi4/Figure11.png
+.. figure:: _static/images/Axi4/Figure11.png
    :width: 541px
    :name: VC/Axi4/Figure11
 
@@ -758,7 +758,7 @@ In the :ref:`previous section <VC/Axi4/TbAxi4AXI4VirtualTransactionInterface/Dem
 structured as shown in :ref:`Figure 18 <VC/Axi4/Figure18>`. The record connections (shown with dotted lines) use
 external names rather than direct signal connections.
 
-.. figure:: images/Axi4/Figure18.png
+.. figure:: _static/images/Axi4/Figure18.png
    :width: 488px
    :name: VC/Axi4/Figure18
 
@@ -1611,7 +1611,7 @@ When :vhdlcode:`xx_READY_BEFORE_VALID` is TRUE, then :vhdlcode:`xx_READY_DELAY_C
 transfer completed. :ref:`Figure 25 <VC/Axi4/Figure25>` shows :vhdlcode:`xx_READY_DELAY_CYCLES` = 2 when
 :vhdlcode:`xx_READY_BEFORE_VALID` is TRUE.
 
-.. figure:: images/Axi4/Figure25.png
+.. figure:: _static/images/Axi4/Figure25.png
    :width: 407px
    :name: VC/Axi4/Figure25
 
@@ -1622,7 +1622,7 @@ When :vhdlcode:`xx_READY_BEFORE_VALID` is FALSE, then :vhdlcode:`xx_READY_DELAY_
 asserted. :ref:`Figure 26 <VC/Axi4/Figure26>` shows :vhdlcode:`xx_READY_DELAY_CYCLES` = 2 when
 :vhdlcode:`xx_READY_BEFORE_VALID` is FALSE.
 
-.. figure:: images/Axi4/Figure26.png
+.. figure:: _static/images/Axi4/Figure26.png
    :width: 407px
    :name: VC/Axi4/Figure26
 
